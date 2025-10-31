@@ -1,4 +1,4 @@
-export default function Dashboard(){
+export default function Dashboard() {
   return (
     <div className="wf-grid">
       <div className="kpi">

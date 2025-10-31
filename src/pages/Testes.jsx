@@ -1,15 +1,15 @@
 import { useState } from "react";
 import Modal from "../components/Modal.jsx";
 
-export default function Testes(){
+export default function Testes() {
   const [open, setOpen] = useState(false);
   return (
     <div className="wf-grid">
-      <div className="wf-btn" onClick={()=>setOpen(true)}>+ Registrar teste</div>
+      <div className="wf-btn" onClick={() => setOpen(true)}>+ Registrar teste</div>
 
       {open && (
-        <Modal title="Registrar teste" onClose={()=>setOpen(false)}>
-          <div className="field"><label>Aeronave (código)</label><input placeholder="Ex: AC-001"/></div>
+        <Modal title="Registrar teste" onClose={() => setOpen(false)}>
+          <div className="field"><label>Aeronave (código)</label><input placeholder="Ex: AC-001" /></div>
           <div className="field"><label>Tipo de teste</label>
             <select>
               <option>ELETRICO</option>
@@ -23,7 +23,7 @@ export default function Testes(){
               <option>REPROVADO</option>
             </select>
           </div>
-          <div className="field"><label>Observações</label><input placeholder="Opcional"/></div>
+          <div className="field"><label>Observações</label><input placeholder="Opcional" /></div>
         </Modal>
       )}
 

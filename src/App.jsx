@@ -10,22 +10,22 @@ import Funcionarios from "./pages/Funcionarios.jsx";
 import Testes from "./pages/Testes.jsx";
 import Relatorio from "./pages/Relatorio.jsx";
 
-export default function App(){
+export default function App() {
   return (
     <Routes>
-      <Route path="/login" element={<Login/>}/>
-      <Route element={<Layout/>}>
-        <Route index element={<Navigate to="/dashboard" />}/>
-        <Route path="/dashboard" element={<Dashboard/>}/>
-        <Route path="/aeronaves" element={<Aeronaves/>}/>
-        <Route path="/aeronaves/:id" element={<AeronaveDetalhe/>}/>
-        <Route path="/pecas" element={<Pecas/>}/>
-        <Route path="/etapas" element={<Etapas/>}/>
-        <Route path="/funcionarios" element={<Funcionarios/>}/>
-        <Route path="/testes" element={<Testes/>}/>
-        <Route path="/relatorio" element={<Relatorio/>}/>
+      <Route path="/login" element={<Login />} />
+      <Route element={<Layout />}>
+        <Route index element={<Navigate to="/dashboard" />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/aeronaves" element={<Aeronaves />} />
+        <Route path="/aeronaves/:id" element={<AeronaveDetalhe />} />
+        <Route path="/pecas" element={<Pecas />} />
+        <Route path="/etapas" element={<Etapas />} />
+        <Route path="/funcionarios" element={<Funcionarios />} />
+        <Route path="/testes" element={<Testes />} />
+        <Route path="/relatorio" element={<Relatorio />} />
       </Route>
-      <Route path="*" element={<Navigate to="/login" />}/>
+      <Route path="*" element={<Navigate to="/login" />} />
     </Routes>
   );
 }

@@ -1,4 +1,4 @@
-export default function Relatorio(){
+export default function Relatorio() {
   return (
     <div className="wf-grid">
       <div className="wf-card">[Resumo da aeronave + peças + etapas + testes]</div>
