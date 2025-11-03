@@ -16,7 +16,7 @@ export default function Layout(){
       </aside>
       <div>
         <header className="header">
-          <strong>Aerocode — Protótipo SPA</strong>
+          <strong>Aerocode</strong>
           <a className="btn" href="/login">Logout</a>
         </header>
         <main className="content"><Outlet/></main>
